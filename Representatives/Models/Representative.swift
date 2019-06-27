@@ -15,9 +15,10 @@ struct TopLevelJSON: Codable {
 struct Representative: Codable {
     
     let name: String
-    let state: String
+    let party: String
     let district: String
     let phone: String
     let office: String
     let link: String
+    
 }

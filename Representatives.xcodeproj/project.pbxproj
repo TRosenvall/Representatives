@@ -14,7 +14,10 @@
 		85CE5FE022C55873004F81F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85CE5FDE22C55873004F81F3 /* LaunchScreen.storyboard */; };
 		85E9B9EF22C55A3D00ACC81C /* Representative.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E9B9EE22C55A3D00ACC81C /* Representative.swift */; };
 		85E9B9F122C55CE600ACC81C /* RepresentativeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E9B9F022C55CE600ACC81C /* RepresentativeController.swift */; };
-		85E9B9F322C561F400ACC81C /* RepresentativeListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E9B9F222C561F400ACC81C /* RepresentativeListTableViewController.swift */; };
+		85E9B9F522C569DB00ACC81C /* StateListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E9B9F422C569DB00ACC81C /* StateListTableViewController.swift */; };
+		85E9B9F722C56A4500ACC81C /* States.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E9B9F622C56A4500ACC81C /* States.swift */; };
+		85E9B9F922C56B9400ACC81C /* StateDetailTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E9B9F822C56B9400ACC81C /* StateDetailTableViewController.swift */; };
+		85E9B9FB22C56E2C00ACC81C /* RepresentativeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E9B9FA22C56E2C00ACC81C /* RepresentativeTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +30,10 @@
 		85CE5FE122C55873004F81F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		85E9B9EE22C55A3D00ACC81C /* Representative.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Representative.swift; sourceTree = "<group>"; };
 		85E9B9F022C55CE600ACC81C /* RepresentativeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepresentativeController.swift; sourceTree = "<group>"; };
-		85E9B9F222C561F400ACC81C /* RepresentativeListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepresentativeListTableViewController.swift; sourceTree = "<group>"; };
+		85E9B9F422C569DB00ACC81C /* StateListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateListTableViewController.swift; sourceTree = "<group>"; };
+		85E9B9F622C56A4500ACC81C /* States.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = States.swift; sourceTree = "<group>"; };
+		85E9B9F822C56B9400ACC81C /* StateDetailTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StateDetailTableViewController.swift; sourceTree = "<group>"; };
+		85E9B9FA22C56E2C00ACC81C /* RepresentativeTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepresentativeTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,7 +96,9 @@
 		85E9B9EA22C5593800ACC81C /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				85E9B9F222C561F400ACC81C /* RepresentativeListTableViewController.swift */,
+				85E9B9F422C569DB00ACC81C /* StateListTableViewController.swift */,
+				85E9B9F822C56B9400ACC81C /* StateDetailTableViewController.swift */,
+				85E9B9FA22C56E2C00ACC81C /* RepresentativeTableViewCell.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -117,6 +125,7 @@
 			children = (
 				85CE5FD922C55871004F81F3 /* Representatives.xcdatamodeld */,
 				85E9B9EE22C55A3D00ACC81C /* Representative.swift */,
+				85E9B9F622C56A4500ACC81C /* States.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -192,9 +201,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				85E9B9F322C561F400ACC81C /* RepresentativeListTableViewController.swift in Sources */,
+				85E9B9FB22C56E2C00ACC81C /* RepresentativeTableViewCell.swift in Sources */,
+				85E9B9F522C569DB00ACC81C /* StateListTableViewController.swift in Sources */,
+				85E9B9F722C56A4500ACC81C /* States.swift in Sources */,
 				85E9B9F122C55CE600ACC81C /* RepresentativeController.swift in Sources */,
 				85E9B9EF22C55A3D00ACC81C /* Representative.swift in Sources */,
+				85E9B9F922C56B9400ACC81C /* StateDetailTableViewController.swift in Sources */,
 				85CE5FD322C55871004F81F3 /* AppDelegate.swift in Sources */,
 				85CE5FDB22C55871004F81F3 /* Representatives.xcdatamodeld in Sources */,
 			);

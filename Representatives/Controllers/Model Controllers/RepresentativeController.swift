@@ -10,11 +10,9 @@ import Foundation
 
 class RepresentativeController {
     
-    static let sharedInstance = RepresentativeController()
+    static let baseURL = URL(string: "http://whoismyrepresentative.com/getall_reps_bystate.php")
     
-    let baseURL = URL(string: "http://whoismyrepresentative.com/getall_reps_bystate.php")
-    
-    func searchRepresentatives(forState state: String, completion: @escaping([Representative]) -> Void) {
+    static func searchRepresentatives(forState state: String, completion: @escaping([Representative]) -> Void) {
         guard let url = baseURL else {completion([]); return}
         var components = URLComponents(url: url, resolvingAgainstBaseURL: true)
         let searchTerm = URLQueryItem(name: "state", value: state)
