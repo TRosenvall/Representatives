@@ -8,22 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		85CE5FD322C55871004F81F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85CE5FD222C55871004F81F3 /* AppDelegate.swift */; };
-		85CE5FD522C55871004F81F3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85CE5FD422C55871004F81F3 /* ViewController.swift */; };
 		85CE5FD822C55871004F81F3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85CE5FD622C55871004F81F3 /* Main.storyboard */; };
 		85CE5FDB22C55871004F81F3 /* Representatives.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 85CE5FD922C55871004F81F3 /* Representatives.xcdatamodeld */; };
 		85CE5FDD22C55873004F81F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85CE5FDC22C55873004F81F3 /* Assets.xcassets */; };
 		85CE5FE022C55873004F81F3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85CE5FDE22C55873004F81F3 /* LaunchScreen.storyboard */; };
+		85E9B9EF22C55A3D00ACC81C /* Representative.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E9B9EE22C55A3D00ACC81C /* Representative.swift */; };
+		85E9B9F122C55CE600ACC81C /* RepresentativeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E9B9F022C55CE600ACC81C /* RepresentativeController.swift */; };
+		85E9B9F322C561F400ACC81C /* RepresentativeListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E9B9F222C561F400ACC81C /* RepresentativeListTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		85CE5FCF22C55871004F81F3 /* Representatives.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Representatives.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		85CE5FD222C55871004F81F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		85CE5FD422C55871004F81F3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		85CE5FD722C55871004F81F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		85CE5FDA22C55871004F81F3 /* Representatives.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Representatives.xcdatamodel; sourceTree = "<group>"; };
 		85CE5FDC22C55873004F81F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		85CE5FDF22C55873004F81F3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		85CE5FE122C55873004F81F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		85E9B9EE22C55A3D00ACC81C /* Representative.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Representative.swift; sourceTree = "<group>"; };
+		85E9B9F022C55CE600ACC81C /* RepresentativeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepresentativeController.swift; sourceTree = "<group>"; };
+		85E9B9F222C561F400ACC81C /* RepresentativeListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepresentativeListTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,7 +90,7 @@
 		85E9B9EA22C5593800ACC81C /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				85CE5FD422C55871004F81F3 /* ViewController.swift */,
+				85E9B9F222C561F400ACC81C /* RepresentativeListTableViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -103,6 +107,7 @@
 		85E9B9EC22C5594600ACC81C /* Model Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				85E9B9F022C55CE600ACC81C /* RepresentativeController.swift */,
 			);
 			path = "Model Controllers";
 			sourceTree = "<group>";
@@ -111,6 +116,7 @@
 			isa = PBXGroup;
 			children = (
 				85CE5FD922C55871004F81F3 /* Representatives.xcdatamodeld */,
+				85E9B9EE22C55A3D00ACC81C /* Representative.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -186,7 +192,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				85CE5FD522C55871004F81F3 /* ViewController.swift in Sources */,
+				85E9B9F322C561F400ACC81C /* RepresentativeListTableViewController.swift in Sources */,
+				85E9B9F122C55CE600ACC81C /* RepresentativeController.swift in Sources */,
+				85E9B9EF22C55A3D00ACC81C /* Representative.swift in Sources */,
 				85CE5FD322C55871004F81F3 /* AppDelegate.swift in Sources */,
 				85CE5FDB22C55871004F81F3 /* Representatives.xcdatamodeld in Sources */,
 			);
@@ -336,7 +344,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YY8J3FPYX8;
-				INFOPLIST_FILE = Representatives/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Representatives/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -354,7 +362,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YY8J3FPYX8;
-				INFOPLIST_FILE = Representatives/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/Representatives/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
